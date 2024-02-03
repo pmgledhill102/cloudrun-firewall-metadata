@@ -5,6 +5,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         # Metadata server URL
         metadata_url = 'http://metadata.google.internal/computeMetadata/v1/'
+        
         # Example: Fetch the project ID. You can customize the path to fetch different metadata.
         path = 'project/project-id'
         headers = {'Metadata-Flavor': 'Google'}

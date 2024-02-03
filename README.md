@@ -1,9 +1,5 @@
 # Cloud Run Firewall Metadata
 
-```diff
-- Note: This currently doesn't work. Blocking '169.254.169.254' will cause all outbound requests to fail. It does however work for arbitrary websites.
-```
-
 When running 3rd party components in a Cloud Run container there may be a requirement
 to prevent it accessing the container metadata service for security reasons
 `'http://metadata.google.internal/computeMetadata/v1/'`.
