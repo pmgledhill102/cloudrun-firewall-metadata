@@ -22,3 +22,8 @@ And then deployed into Cloud run:
 ```sh
 gcloud run deploy ip-filter --image europe-west2-docker.pkg.dev/$PROJECT_ID/dev-images/ip-filter --platform managed --region europe-west2 --allow-unauthenticated --execution-environment gen2
 ```
+
+## References
+
+- [Google Docs: About Execution Environments](https://cloud.google.com/run/docs/about-execution-environments)
+- [Google Docs: Container sandbox](https://cloud.google.com/run/docs/container-contract#sandbox)
